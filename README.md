@@ -1,7 +1,7 @@
 # REPAIR
 
 ## Description
-This repository provides Robot Execution with Planned And Interactive Recovery (REPAIR).
+This repository provides [Robot Execution with Planned And Interactive Recovery (REPAIR)](https://emergentsystemlabstudent.github.io/REPAIR/).
 
 * **Maintainer:** Shoichi Hasegawa (hasegawa.shoichi@em.ci.ritsumei.ac.jp)  
 * **Author:** Shoichi Hasegawa (hasegawa.shoichi@em.ci.ritsumei.ac.jp)
@@ -34,3 +34,6 @@ The `prompts` folder contains the following prompt files. Use them as needed:
   Prompt for action planning by an LLM.
 
 ---
+
+## References
+- [Spatial Concepts-Based Prompts With Large Language Models for Robot Action Planning](https://ieeexplore.ieee.org/document/11311990)
