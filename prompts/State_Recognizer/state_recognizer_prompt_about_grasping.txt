@@ -1,0 +1,2 @@
+This image appears to show a robotic arm. 
+Please respond with True only if the robot is grasping an object, and False if it is not grasping an object.

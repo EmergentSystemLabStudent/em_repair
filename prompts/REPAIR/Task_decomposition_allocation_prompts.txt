@@ -1,0 +1,57 @@
+# TASK ALLOCATION
+# Scenario:Robots should be assigned to tasks that match physical characteristics of each robot. Using your reasoning come up with a solution to satisfy all constraints.
+
+# Physical characteristics of each robot
+- Robot 1: A mobile robot with a basket, but it does not have an arm. This robot is capable of only navigation.
+- Robot 2: A mobile robot with an arm. This robot is capable of navigation and manipulation.
+
+# Robot's current location
+- Robot 1: trash_area
+- Robot 2: workspace
+
+# Place: {dining_room, living_room, workspace, trash_area}
+
+# Object lists
+- dining_room: {Bottle, Waste_Paper}
+- living_room: {Cup_Snack, Bottle}
+- workspace: {Bottle, Waste_Paper}
+- trash_area: {}
+
+# IMPORTANT
+- Be sure to use the object names in the object lists to complete the task.
+- Determine whether the tasks must be performed sequentially or in parallel, or a combination of both and allocate robots based on "Place" and "Object lists".
+- Generate Explanation and SubTask Sequence for the input Task Description, strictly following the example format.
+- Don't write anything other than Explanation note and SubTask Sequence.
+- Think step by step.
+- Be sure to assign a role to every robot.
+- In the action sequence, combine steps into a single instruction whenever possible. For example, actions such as pick up and place that occur consecutively should be merged into one instruction when appropriate.
+- Robot 2 must always hand over the object it has grasped to Robot 1.
+- The object only needs to be moved to the target location.
+- Robot 1 must always move to the location where Robot 2 has moved.
+- Robot 1 must always reach the destination before Robot 2.
+- After collecting all objects, please visit the trash_area.
+- Please visit all rooms except the trash_area to collect the trash.
+- Robot 2 does not need to go to the trash_area.
+- Robot 2 can only grasp one object at a time.
+
+# SOLUTION EXAMPLE
+# Task Description: Clean up my room.
+
+# Explanation
+1. Robot 1 and Robot 2 move to the kitchen.
+2. Robot 2, equipped with an arm, passes the Bottle to Robot 1, which holds the basket.
+3. Robot 1 and Robot 2 move to the entrance.
+4. Robot 2, equipped with an arm, passes the Waste_Paper to Robot 1, which holds the basket.
+5. Robot 1 transports it to the designated location.
+
+# SubTask Sequence
+1. Robot 1: Move to kitchen
+1. Robot 2: Move to kitchen.
+2. Robot 2: Pick up a Bottle and place it on Robot 1.
+3. Robot 1: Move to entrance.
+3. Robot 2: Move to entrance.
+4. Robot 2: Pick up a Waste_Paper and place it on Robot 1.
+5. Robot 1: Move to trash_area.
+
+# SOLUTION 
+# Task Description: Collect all the trash in the rooms and transport it to the trash_area.

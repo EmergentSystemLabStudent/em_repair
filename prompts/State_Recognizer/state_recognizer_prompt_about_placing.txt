@@ -1,0 +1,4 @@
+The first image shows the contents of the clear box.
+The second image shows the target object.
+Is the target object inside the clear box?
+Please respond with True only if the target object is in the clear box, and False if the target object is not in the clear box.
